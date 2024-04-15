@@ -5,9 +5,22 @@ body {
     color: #000000; /* Kolor tekstu */ 
     border: inherit;
 }
-h1 {
-    color: #00a800; /* Kolor nagłówka */
-    font-size: 50px; /* Rozmiar czcionki nagłówka */
-    font-family: Georgia, serif; /* Rodzina czcionek używana w nagłówku */
-    border: dashed red;
+
+@keyframes color-change {
+  0% {
+    color: blue;
+  }
+
+  50% {
+    color: red;
+  }
+
+  100% {
+    color: blue;
+  }
 }
+
+h1 {
+  animation: color-change 3s infinite;
+}
+
